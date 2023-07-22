@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    height: auto;
+    background-color: rgb(24, 236, 236);
+
+    p {
+        margin: 0;
+        margin-left: 2%;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff; /* Added text color for better visibility on the background color */
+    }
+
+    .footer-links {
+        display: flex;
+    }
+
+    .footer-link {
+        margin-right: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-text {
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff; /* Added text color for better visibility on the background color */
+    }
+
+    .footer-social {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-social-icon {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    /* Add any additional styling you want for your footer here */
+}
