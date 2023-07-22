@@ -1,0 +1,112 @@
+/* main {
+    height: auto;
+    min-height: 92vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(lightblue, lightgreen);
+  }
+  main .container {
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container .table {
+    width: auto;
+    box-shadow: 0px 0px 2px 2px lightgreen;
+    background-color: lightgoldenrodyellow;
+  }
+  main .container .table thead {
+    width: auto;
+    height: 50px;
+    border-bottom: 1px solid lightgreen;
+  }
+  main .container .table thead th {
+    border-bottom: 1px solid lightgreen;
+  }
+  main .container .table thead .L-border {
+    border-left: 1px solid lightgreen;
+    padding-left: 2%;
+    width: 120px;
+  }
+  main .container .table tbody tr {
+    width: auto;
+    height: 30px;
+  }
+  main .container .table tbody .L-border {
+    border-left: 1px solid lightgreen;
+    width: auto;
+  }
+  main .container .table:hover {
+    scale: 1.1;
+    transition: 2s scale ease-in-out;
+  }
+  
+  # sourceMappingURL=employeeList.css.map */
+
+
+
+  main {
+    height: auto;
+    min-height: 92vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(#66ccff, #99ff99); /* Light Blue to Light Green gradient */
+  }
+  
+  main .container {
+    padding: 1%;
+    width: 60%; /* Slightly wider container for better visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main .container .table {
+    width: 100%; /* Adjusted to take full container width */
+    box-shadow: 0px 0px 4px 2px rgba(144, 238, 144, 0.6); /* Soft green shadow */
+    background-color: #fdfd96; /* Pale yellow background */
+    border-collapse: collapse; /* Collapsed border for a cleaner look */
+  }
+  
+  main .container .table thead {
+    height: 50px;
+    background-color: #99ff99; /* Light green background for the header */
+  }
+  
+  main .container .table thead th {
+    padding: 8px; /* Added padding for better readability */
+    font-weight: bold; /* Make the header text bold */
+    border-bottom: 2px solid #66ccff; /* Light blue bottom border for header cells */
+  }
+  
+  main .container .table thead .L-border {
+    border-left: 1px solid #66ccff;
+    padding-left: 2%;
+    width: 120px;
+  }
+  
+  main .container .table tbody tr {
+    height: 40px; /* Slightly taller rows for better spacing */
+    background-color: #f0e68c; /* Khaki background for table rows */
+  }
+  
+  main .container .table tbody .L-border {
+    border-left: 1px solid #66ccff;
+    width: auto;
+  }
+  
+  main .container .table:hover {
+    transform: scale(1.02); /* Slightly scale up on hover for a subtle effect */
+    transition: 0.3s ease-in-out;
+  }
+  

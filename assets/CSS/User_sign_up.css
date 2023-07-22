@@ -1,0 +1,146 @@
+/* main {
+    height: auto;
+    min-height: 90vh;
+    background-image: linear-gradient(lightblue, lightgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #register {
+    text-align: center;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: beige;
+  }
+  main #register p {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  main #register form {
+    height: 100%;
+    width: 100%;
+  }
+  main #register form .input {
+    height: auto;
+    min-height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+  main #register form .input label {
+    height: 40%;
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: auto;
+  }
+  main #register form .input input {
+    width: 90%;
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 2px 2px lightgray;
+  }
+  main #register form button {
+    margin-top: 2%;
+    height: 50px;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: green;
+    box-shadow: 0px 0px 2px 2px lightgray;
+  }
+  # sourceMappingURL=User_sign_up.css.map */
+
+
+
+
+  main {
+    height: auto;
+    min-height: 90vh;
+    background-image: linear-gradient(135deg, #86c6ff, #a5f396);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main #register {
+    text-align: center;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  main #register p {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  main #register form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main #register form .input {
+    height: auto;
+    min-height: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px auto;
+    padding: 8px;
+  }
+  
+  main #register form .input label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  main #register form .input input {
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  main #register form button {
+    margin-top: 20px;
+    height: 50px;
+    width: 60%;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(76, 175, 80, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  main #register form button:hover {
+    background-color: #45a049;
+  }
+  
