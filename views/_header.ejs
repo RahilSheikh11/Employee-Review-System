@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERS | <%= title %></title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="/" class="logo">ERS | <%= title %></a>
+            </div>
+            
+            <div class="navbar-links">
+                <% if(locals.user) { %>
+                    <% if (locals.user.isAdmin) { %>
+                        <a href="/admin/assignWork" class="nav-link">Assign Work</a>
+                        <a href="/admin/view-employees" class="nav-link">Employee List</a>
+                        <a href="/admin/addEmployee" class="nav-link">Register</a>
+                    <% } %>
+                    <div class="welcome">
+                        Welcome <%= user.name %>
+                    </div>
+                    <a href="/user/sign-out" class="nav-link">Sign Out</a>
+                <% } else { %>
+                    <a href="/user/sign-up" class="nav-link">Sign Up</a>
+                <% } %>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERS | <%= title %></title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+ 
+            
+            <div class="navbar-links">
+                <% if(locals.user) { %>
+                    <% if (locals.user.isAdmin) { %>
+                        <a href="/admin/assignWork" class="nav-link">Assign Work</a>
+                        <a href="/admin/view-employees" class="nav-link">Employee List</a>
+                        <a href="/admin/addEmployee" class="nav-link">Register</a>
+                    <% } %>
+                 
+                <% } else { %>
+                    <a href="/user/sign-up" class="nav-link">Sign Up</a>
+                <% } %>
+            </div>
+        </nav>
+    </header>
+
+    <% if (!locals.user) { %>
+        <%- include('user_sign_in'); %>
+    <% } else { %>
+        <main>
+            <div id="description">
+                <p>
+                    Welcome to <strong>Employee Review System</strong>
+                </p>
+                <hr>
+            </div>
+            <div id="review-container">
+                <div class="section" id="left">
+                    <div class="review-box">
+                        <div class="heading">
+                            <h2>Kindly review your co-employees</h2>
+                            <br>
+                            <h5>This task is assigned by the Admin</h5>
+                        </div>
+
+                        <div class="reviews">
+                            <% for (let i = 0; i < toReview.length; i++) { %>
+                                <% if (toReview[i] != null) { %>
+                                    <div class="outerBox">
+                                        <h4>To: <%= toReview[i].name %></h4>
+                                        <div class="innerBox">
+                                            <form action="/review/new-review/<%= toReview[i]._id %>" method="get">
+                                                <textarea placeholder="Review, Here!!" name="newReview" rows="5" cols="20" class="textarea"></textarea>
+                                                <br>
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                <% } %>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="right">
+                    <div class="review-box">
+                        <div class="heading">
+                            <h2>My Reviews</h2>
+                        </div>
+                        <% for (let review of myReviews) { %>
+                            <% if (review != null) { %>
+                                <div class="card-out">
+                                    <div class="card-in">
+                                        <h3>Message: <%= review.content %></h3>
+                                        <p>From: <strong><%= review.name %></strong></p>
+                                    </div>
+                                </div>
+                            <% } else { %>
+                                <h1>Nothing to view yet!!</h1>
+                            <% } %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <% } %>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>
