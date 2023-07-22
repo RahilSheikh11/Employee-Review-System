@@ -1,0 +1,65 @@
+/* Main styles for the "Add Employee" section */
+
+main {
+  height: auto;
+  min-height: 92vh;
+  background-image: linear-gradient(rgb(112, 185, 252), rgb(179, 249, 169));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #add-employee {
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 4px 2px lightgray;
+}
+
+main #add-employee form {
+  height: 100%;
+  width: 100%;
+}
+
+main #add-employee form .input {
+  height: auto;
+  min-height: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+main #add-employee form .input label {
+  height: 40%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: auto;
+}
+
+main #add-employee form input {
+  width: 90%;
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+main #add-employee form button {
+  margin-top: 15px;
+  height: 50px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: white;
+  background-color: #3c64ad;
+  box-shadow: 0px 0px 4px 2px lightgray;
+}
